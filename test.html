@@ -1,0 +1,33 @@
+<html>
+    <head>
+    <title>Lamont Audio</title>
+    <style type="text/css">
+     video {
+	 border: 1px solid #aaa;
+	 object-fit: initial;
+     }
+     ::cue {
+	 font-size: 12px;
+     }
+
+    </style>
+    </head>
+    <body>
+	<h1>Lamont Audio</h1>
+
+	<figure>
+	    <figcaption>Listen to the T-Rex:</figcaption>
+	    <video controls width="500" height="250">
+		<source type="video/mp4" src="lamont.mp4">
+		<track label="English" kind="captions" srclang="en" src="IM_M145_2005_99585_0000_ACC.vtt" type="text/vtt" default enabled="true">
+	    </video>
+	</figure>
+	<script type="text/javascript" src="js/captionator-min.js"></script>
+	<script type="text/javascript">
+	 window.addEventListener("load",function(eventData) {
+	     captionator.captionify();
+	 });
+    </script>
+    </body>
+
+</html>
